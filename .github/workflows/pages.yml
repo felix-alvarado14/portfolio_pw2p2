@@ -1,4 +1,4 @@
-name: Portafolio a Github Pages con LESS y Vite
+name: Portafolio a Github Pages utilizando LESS y Vite
 
 on: 
   push:
