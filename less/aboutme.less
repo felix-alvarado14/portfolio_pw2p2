@@ -1,0 +1,53 @@
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .container{
+        max-width: 800px;
+        margin: 50px auto;
+        background: @secondary-color-dark;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+        text-align: center;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        img{
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 15%;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: @primary-color;
+            color: @primary-text-color;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: @primary-color-dark;
+                transform: scale(1.1);
+            }
+        }
+        .about-me-box{
+            display: none; 
+            margin-top: 20px;
+        }
+    }
+}
