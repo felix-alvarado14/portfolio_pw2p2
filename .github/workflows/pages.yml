@@ -1,4 +1,4 @@
-name: CICD de Vite MPA a Github Pages
+name: Portafolio a Github Pages con LESS y Vite
 
 on: 
   push:
